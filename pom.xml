@@ -98,7 +98,8 @@
 
 		<!-- build timestamp settings for versions -->
 		<timestamp>${maven.build.timestamp}</timestamp>
-		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
+		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssZ</maven.build.timestamp.format>
+		<project.build.outputTimestamp>2023-01-01T00:00:00Z</project.build.outputTimestamp>
 
 		<!-- compiler settings -->
 		<maven.compiler.source>11</maven.compiler.source>
@@ -164,17 +165,17 @@
 			<version>${dependency.liboscal-java.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>gov.nist.secauto.metaschema</groupId>
+			<groupId>dev.metaschema</groupId>
 			<artifactId>cli-processor</artifactId>
 			<version>${dependency.metaschema-framework.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>gov.nist.secauto.metaschema</groupId>
+			<groupId>dev.metaschema</groupId>
 			<artifactId>metaschema-cli</artifactId>
 			<version>${dependency.metaschema-framework.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>gov.nist.secauto.metaschema</groupId>
+			<groupId>dev.metaschema</groupId>
 			<artifactId>metaschema-schema-generator</artifactId>
 			<version>${dependency.metaschema-framework.version}</version>
 		</dependency>
@@ -201,11 +202,7 @@
 			<!-- For console log color -->
 			<groupId>org.fusesource.jansi</groupId>
 			<artifactId>jansi</artifactId>
-<<<<<<< HEAD
-			<version>2.4.1</version>
-=======
 			<version>${dependency.jansi.version}</version>
->>>>>>> 549a44e (Fixed PMD errors)
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
